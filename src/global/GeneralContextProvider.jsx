@@ -29,8 +29,6 @@ const GeneralContextProvider = (props) => {
     dispatchGeneral({ type: 'INPUT_CHANGE', payload: event.target.value });
   };
 
-  console.log(isExpand);
-
   return (
     <GeneralContext.Provider
       value={{

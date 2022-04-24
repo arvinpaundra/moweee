@@ -2,7 +2,7 @@ import { createContext } from 'react';
 
 const GeneralContext = createContext({
   isExpandHandler: () => {},
-  isExpand: false,
+  isExpand: null,
   searchSubmitHandler: (event) => {},
   search: 'Aladdin',
 });
