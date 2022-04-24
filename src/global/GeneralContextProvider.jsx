@@ -15,7 +15,7 @@ const GeneralContextProvider = (props) => {
 
   const [general, dispatchGeneral] = useReducer(reducer, { searchState: 'Aladdin' });
 
-  const [isExpand, setIsExpand] = useState(null);
+  const [isExpand, setIsExpand] = useState(true);
 
   const onExpandHandler = () => {
     setIsExpand((prevState) => !prevState);
