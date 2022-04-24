@@ -15,7 +15,7 @@ const GeneralContextProvider = (props) => {
 
   const [general, dispatchGeneral] = useReducer(reducer, { searchState: 'Aladdin' });
 
-  const [isExpand, setIsExpand] = useState(false);
+  const [isExpand, setIsExpand] = useState(null);
 
   const onExpandHandler = () => {
     setIsExpand((prevState) => !prevState);
@@ -28,6 +28,8 @@ const GeneralContextProvider = (props) => {
   const onSubmitHandler = (event) => {
     dispatchGeneral({ type: 'INPUT_CHANGE', payload: event.target.value });
   };
+
+  console.log(isExpand);
 
   return (
     <GeneralContext.Provider
